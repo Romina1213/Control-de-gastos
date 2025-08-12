@@ -125,3 +125,92 @@ ul li:last-child {
     color: #fff;
 
 }
+@media (max-width: 1024px) {
+    .main-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .form-group {
+        width: 80%;
+    }
+
+    .img-container img {
+        width: 70%;
+    }
+}
+
+/* Dispositivos móviles grandes */
+@media (max-width: 768px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main-container {
+        flex-direction: column;
+        width: 95%;
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+        gap: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    button,
+    .botonFormulario1 {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    ul li {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .img-container img {
+        width: 90%;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .container {
+        gap: 15px;
+    }
+
+    .form-group {
+        gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button,
+    .botonFormulario1 {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .total {
+        font-size: 1.2rem;
+    }
+}
